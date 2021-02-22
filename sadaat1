@@ -8,7 +8,7 @@ resource "aws_s3_bucket" "ssbucket" {
 	acl = "private"
 }
 resource "aws_instance" "web" {
-  ami           = data.aws_ami.ubuntu.id
+  ami           = "ami-047a51fa27710816e"
   instance_type = "t2.micro"
   key_name = "syed"
 }
